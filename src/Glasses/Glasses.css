@@ -8,7 +8,8 @@
 	left: 0;
 	right: 0;
 	bottom: 0;
-	background: url(../../public/img/background.jpg) center / cover no-repeat;
+	background: url(/public/glassesImage/background.jpg) center / cover
+		no-repeat;
 	filter: brightness(70%);
 	z-index: -999;
 }
