@@ -1,6 +1,12 @@
 import React from "react";
 
 const Model = ({ product, isOpen = false }) => {
+	const open = {
+		opacity: 0.75,
+	};
+	const close = {
+		opacity: 0,
+	};
 	return (
 		<div className="col-md-6">
 			<div
@@ -14,7 +20,8 @@ const Model = ({ product, isOpen = false }) => {
 					height="100%"
 				/>
 				<img
-					style={{ display: isOpen ? "block" : "none" }}
+					// style={{ display: isOpen ? "block" : "none" }}
+					style={isOpen ? open : close}
 					className="img-glasses"
 					src={product.url}
 					alt="glasses"

@@ -16,7 +16,10 @@ export default class Glasses extends Component {
 	}
 
 	handleSelect = (product) => {
-		this.setState({ isOpen: true, productItem: product });
+		this.setState({ isOpen: false });
+		setTimeout(() => {
+			this.setState({ isOpen: true, productItem: product });
+		}, 100);
 	};
 
 	render() {
